@@ -37,7 +37,7 @@ def main():
     yaml_path = os.path.join(
         PROJECT_ROOT, "Imagenes", "dataset", "data.yaml"
     )
-    model = YOLO(os.path.join(PROJECT_ROOT, "src", "modelos", "yolo26m.pt"))
+    model = YOLO(os.path.join(PROJECT_ROOT, "src", "modelos", "yolo11n.pt"))
 
     # ── Entrenamiento ─────────────────────────────────────────────────────────
     try:
