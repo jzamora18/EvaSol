@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.EvaSolEnv
+
+# Datasets
+Imagenes
+
+# Training
+runs
+
+# Outputs
+evaluación
+
+# Private reports
+reporte_plantilla.docx
