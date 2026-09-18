@@ -1,13 +1,18 @@
+import os
+import sys
 import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
 import tempfile
-import os
 from datetime import datetime
-from Reporte import generar_reporte
+try:
+    from Reporte import generar_reporte
+except ImportError:
+    from evasol.Reporte import generar_reporte
 import cv2
 import numpy as np
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 @st.cache_resource
 def load_model(model_path: str):

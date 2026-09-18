@@ -45,15 +45,8 @@ pip install -r requirements.txt
 
 ### Iniciar la aplicación
 
-`Validador.py` importa con `from Reporte import generar_reporte`, por lo que `src/evasol` debe estar en el `PYTHONPATH`:
-
 ```bash
-# Opción 1: ejecutar desde la carpeta del módulo
-cd src/evasol
-streamlit run Validador.py
-
-# Opción 2: desde la raíz del proyecto
-PYTHONPATH=src/evasol streamlit run src/evasol/Validador.py
+streamlit run src/evasol/Validador.py
 ```
 
 ### Flujo de trabajo
@@ -99,7 +92,8 @@ EvaSol/
 │   │   ├── yolo11n.pt     # Modelo base para entrenar
 │   │   ├── yolo26m.pt
 │   │   ├── yolo26n.pt
-│   │   └── Pesos_Entrenamiento_25_Epochs.pt
+│   │   ├── Pesos_Entrenamiento_25_Epochs.pt
+│   │   └── Pesos_Entrenamiento_50_Epochs.pt
 │   └── evasol/
 │       ├── __init__.py
 │       ├── Validador.py   # Aplicación Streamlit principal
@@ -183,15 +177,8 @@ pip install -r requirements.txt
 
 ### Run the application
 
-`Validador.py` imports via `from Reporte import generar_reporte`, so `src/evasol` must be on the `PYTHONPATH`:
-
 ```bash
-# Option 1: run from the module folder
-cd src/evasol
-streamlit run Validador.py
-
-# Option 2: from the project root
-PYTHONPATH=src/evasol streamlit run src/evasol/Validador.py
+streamlit run src/evasol/Validador.py
 ```
 
 ### Workflow
@@ -237,7 +224,8 @@ EvaSol/
 │   │   ├── yolo11n.pt     # Base model for training
 │   │   ├── yolo26m.pt
 │   │   ├── yolo26n.pt
-│   │   └── Pesos_Entrenamiento_25_Epochs.pt
+│   │   ├── Pesos_Entrenamiento_25_Epochs.pt
+│   │   └── Pesos_Entrenamiento_50_Epochs.pt
 │   └── evasol/
 │       ├── __init__.py
 │       ├── Validador.py   # Main Streamlit application
